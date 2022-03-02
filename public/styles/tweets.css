@@ -1,0 +1,111 @@
+.tweetsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #eee;
+  padding: 10px;
+}
+.tweetsContainer article {
+
+  font-weight: bold;
+  margin-top: 4px;
+  width: 1000px;
+  border-style: none;
+  border-bottom: black;
+  border-bottom-style: groove;
+  background-color: #eee;
+  font-size: large;
+  padding-top: 10px;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+article:hover {
+  box-shadow: 5px 5px lightblue;
+}
+
+
+
+
+.messageHeader {
+  height: 400px;
+  width: 100%;
+  padding-top: 20px;
+  color: rgb(107, 0, 0);
+  display:inline;
+}
+
+.messageHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: larger;
+}
+
+.c1 {
+  font-weight: 100;
+}
+
+.c2 {
+  color: rgb(177, 157, 157);
+}
+
+
+
+
+
+
+footer {
+  display: inline-block;
+  width: inherit;
+}
+
+.reactionImages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+.fa-flag:hover {
+  color: rgb(0, 165, 110)
+}
+.fa-retweet:hover {
+  color: rgb(255, 208, 0)
+}
+.fa-heart:hover {
+  color: rgb(255, 0, 0)
+}
+
+
+
+.resize {
+  width: auto;
+  height: 100px;
+  display: inherit;
+  float: left;
+  padding-left: 20px;
+}
+
+.test {
+  border-bottom: black;
+  border-style: none;
+  border-bottom-style: groove;
+  width: auto;
+  display: block;
+  border-left-width: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  font-size: larger;
+}
+    
+

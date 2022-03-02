@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  top: 0px;
+  height: 120px;
+  width: 100%;
+  background-color:#4056A1;
+  color:#FFFFFF ;
+  font-family: "Bungee";
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  z-index: 9999;
+}
+
+.tweetText {
+  color: #ffffff;
+  font-size: 20px;
+  width: 275px;
+  height: 50px;
+  background-color: #5ab6bb;
+  float: right;
+  margin: 0.75em;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+/* fix */
+.tweetText i {
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+}
