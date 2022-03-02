@@ -1,13 +1,14 @@
-.tweetsContainer {
+#tweetsContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  flex-direction: column;
   background-color: #eee;
   padding: 10px;
+  
 }
-.tweetsContainer article {
-
+#tweetsContainer article {
+  margin-bottom: 10px;
   font-weight: bold;
   margin-top: 4px;
   width: 1000px;
@@ -87,10 +88,12 @@ footer {
 
 .resize {
   width: auto;
-  height: 100px;
+  height: 80px;
   display: inherit;
   float: left;
   padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .test {
