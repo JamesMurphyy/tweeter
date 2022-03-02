@@ -6,31 +6,6 @@
 
 
 
-const data = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ]
-
 const createTweetElement = function(tweet) {
   const $tweets = $(`
   <article> 
@@ -64,14 +39,49 @@ const renderTweets = function(tweets) {
   $('#tweetsContainer').empty();
   tweets.forEach(tweet => {
     const $tweet = createTweetElement(tweet)
-    $('#tweetsContainer').append($tweet)
+    $('#tweetsContainer').prepend($tweet)
   })
   // $('#tweetsContainer').append(createTweetElement(tweet));
 };
 
+
+const loadTweets = () => {
+  $.ajax('/tweets', {
+    method: 'GET',
+    success: (tweets) => {
+      renderTweets(tweets)},
+    error: (data, text, error) => console.error(error)
+  });
+};
+
+
 $(document).ready(()=>{
-  // const $tweet = createTweetElement(tweetData);
-  // console.log($tweet);
-  // $('#tweetsContainer').append($tweet);
-  renderTweets(data);
+  loadTweets()
+  
+  $( ".new-tweet form" ).submit(function( event ) {
+    event.preventDefault();
+
+    let counter = parseInt($(".counter").text())
+    let text = $("textarea").val()
+
+    if (counter < 0) {
+      return alert("Your message is over the character limit!")
+
+    } else if (text === null || text === "") {
+      return alert("Your message box is empty!")
+
+    } else {
+
+      $.ajax('/tweets', {
+        data: $(this).serialize(),
+        method: 'POST',
+        success: (data) => {
+          loadTweets(data)
+          console.log($(this).serialize())
+          $('textArea').val(''); // clear textarea
+          $('.counter').text('140'); // reset counter to 140
+        }
+      })
+    }
+  })
 })
