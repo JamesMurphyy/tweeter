@@ -103,7 +103,7 @@ footer {
   border-bottom: black;
   border-style: none;
   border-bottom-style: groove;
-  width: auto;
+  /* width: auto; */
   display: block;
   border-left-width: 20px;
   margin-right: 20px;
@@ -112,6 +112,11 @@ footer {
   padding-left: 25px;
   padding-bottom: 30px;
   font-size: larger;
+  word-break: break-word;
+  padding-right: 25px;
+}
+text {
+  padding-right: 20px;
 }
     
 

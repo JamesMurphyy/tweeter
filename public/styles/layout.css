@@ -30,6 +30,33 @@ body {
 }
 
 
+/* Tablet Styles
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 80%;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+/* Desktop styles */
+
+/* @media only screen and (min-width: 1024px) {
+  body {
+    width: 20%;
+  }
+  .container {
+    width: 20%;
+  }
+} */
+
+
+
+
+
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

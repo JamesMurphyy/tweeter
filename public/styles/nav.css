@@ -44,6 +44,7 @@ nav {
   bottom: -1.5em;
   color: white;
   animation: bounce 2s ease infinite;
+  
 
 }
 .tweetText i:hover {
@@ -52,6 +53,7 @@ nav {
   /* font-size: 1.2em;
   bottom: -1em;
   animation: bounce 2s ease infinite; */
+  transition: .5s;
 }
 
 
