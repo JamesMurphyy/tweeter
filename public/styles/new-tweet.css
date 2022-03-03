@@ -24,6 +24,11 @@
   padding: 6px 9px;
   margin-top: 8px;
 }
+.new-tweet input:hover {
+  box-shadow: 1px 1px rgb(56, 103, 255);
+  cursor: pointer;
+}
+
 
 .counter {
   font-family: Bungee, sans-serif;
@@ -57,7 +62,7 @@
   border-bottom-style: groove;
   background-color: #eee;
   font-size: large;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 /* .new-tweet div {
@@ -67,6 +72,25 @@
   font-family: "Bungee";
   
 } */
+
+.error {
+  display: none;
+  color: #D8000C;
+  background-color: #ffa4a4;
+  border-radius: 5px;
+  font-weight: 100;
+  font-size: revert;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.fa-triangle-exclamation {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+
+
 
 
 .characterLimit {

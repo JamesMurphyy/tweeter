@@ -10,6 +10,8 @@
   background-color: #6ec6e9;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   margin-top: 120px
+}
 
-  
+.headerName {
+  font-size: xx-large;
 }

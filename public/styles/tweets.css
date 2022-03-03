@@ -75,13 +75,16 @@ footer {
 
 
 .fa-flag:hover {
-  color: rgb(0, 165, 110)
+  color: rgb(0, 165, 110);
+  cursor: pointer;
 }
 .fa-retweet:hover {
-  color: rgb(255, 208, 0)
+  color: rgb(255, 208, 0);
+  cursor: pointer;
 }
 .fa-heart:hover {
-  color: rgb(255, 0, 0)
+  color: rgb(255, 0, 0);
+  cursor: pointer;
 }
 
 
