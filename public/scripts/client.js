@@ -4,6 +4,11 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// $('.fa-angle-double-down').scrollTo('.container')
+
+
+
+
 
 const escape = function (str) {
   let div = document.createElement("div");
@@ -62,19 +67,34 @@ const loadTweets = () => {
 
 
 $(document).ready(()=>{
+
+  
+
+  $('.tweetText i').on('click', () => {
+    $('.new-tweet').slideToggle();
+    $('.new-tweet textarea').focus();
+  });
+
   loadTweets()
   
   $( ".new-tweet form" ).submit(function( event ) {
     event.preventDefault();
 
+
     let counter = parseInt($(".counter").text())
     let text = $("textarea").val()
+    $(".error").hide();
+    console.log($(this).children(".error"))
 
     if (counter < 0) {
-      return alert("Your message is over the character limit!")
-
+      // return alert("Your message is over the character limit!")
+      $(".tweet-error").text("Your tweet is over 140 characters. Please reduce this before tweeting!");
+      $(this).children(".error").slideDown(300);
+      
     } else if (text === null || text === "") {
-      return alert("Your message box is empty!")
+      // return alert("Your message box is empty!")
+      $(".tweet-error").text("There is nothing being tweeted!");
+      $(this).children(".error").slideDown(300);
 
     } else {
 
@@ -84,8 +104,8 @@ $(document).ready(()=>{
         success: (data) => {
           loadTweets(data)
           console.log($(this).serialize())
-          $('textArea').val(''); // clear textarea
-          $('.counter').text('140'); // reset counter to 140
+          $("textArea").val(""); // clear textarea
+          $(".counter").text("140"); // reset counter to 140
         }
       })
     }

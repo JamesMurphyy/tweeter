@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
   
   $(".new-tweet textarea").on("input", function() {
@@ -16,6 +13,25 @@ $(document).ready(function() {
       counter.removeClass("characterLimit");
     }
   });
+
+
+
+  $("#button").hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+        $('#button').fadeIn();
+        $('.tweetText').fadeOut();
+    } else {
+        $('#button').fadeOut();
+        $('.tweetText').fadeIn();
+    }
+  });
+
+  $('#button').on('click', function(e) {
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+
 });
 
 
