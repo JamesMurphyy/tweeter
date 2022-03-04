@@ -1,18 +1,34 @@
-# Tweeter Project
+# TinyApp Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a single page, data displaying application that utilizes HTML5, jQuery, and CSS methods. These features have been combined to display Tweets from data which is then displayed locally, mimicking the popular web-app known as "Twitter". 
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Final Product
+
+!["Desktop Format"](https://github.com/JamesMurphyy/tweeter/blob/master/docs/Tweeter%20App%20ss1.PNG?raw=true)
+
+!["Mobile Format"](https://github.com/JamesMurphyy/tweeter/blob/master/docs/Tweeter%20App%20ss3.PNG)
+
+!["Mobile Format Displaying Tweets"](https://github.com/JamesMurphyy/tweeter/blob/master/docs/Tweeter%20App%20ss2.PNG)
+
+
+## Dependencies Used
+
+- Express
+- Chance
+- Body-parser
+- MD5
 
 ## Getting Started
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `npm run local` command.
 
-## Dependencies
+## When Installed
 
-- Express
-- Node 5.10.x or above
+- Go to `localhost:8080` on your browser.
+- Once there, you will see two randomly generated tweets.
+- You are able to submit tweets after inputting text that is over 0 and under 140 characters long.
+- Once submitted, your message will be displayed under the text area where a randomly generated name and user handle will be given to you with the exact date your message was submitted.
+- These tweets are stored and can be browsed through at any time.
+- A button will be displayed on the bottom right of the screen when you scroll down past a certain length of the page.
+- You are also able to view the tweets without having to see the input text area by clicking the top right arrow label (Undone by a reclick of the arrow).
