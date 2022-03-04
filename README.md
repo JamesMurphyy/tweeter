@@ -1,4 +1,4 @@
-# TinyApp Project
+# Tweeter Project
 
 Tweeter is a single page, data displaying application that utilizes HTML5, jQuery, and CSS methods. These features have been combined to display Tweets from data which is then displayed locally, mimicking the popular web-app known as "Twitter". 
 
