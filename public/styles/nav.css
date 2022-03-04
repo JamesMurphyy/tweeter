@@ -44,9 +44,8 @@ nav {
   bottom: -1.5em;
   color: white;
   animation: bounce 2s ease infinite;
-  
-
 }
+
 .tweetText i:hover {
   color: red;
   cursor: pointer;

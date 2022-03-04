@@ -73,9 +73,10 @@ $(document).ready(()=>{
   
 
   $('.tweetText i').on('click', () => {
-    $('.new-tweet').slideToggle();
+    $('.new-tweet form').slideToggle();
     $('.new-tweet textarea').focus();
   });
+  
 
   loadTweets()
   

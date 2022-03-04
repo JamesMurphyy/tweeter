@@ -30,34 +30,64 @@ body {
 }
 
 
-/* Tablet Styles
+/* Tablet Styles */
 
-@media only screen and (min-width: 768px) {
-  body {
-    width: 80%;
+@media only screen and (max-width: 1024px) {
+  .new-tweet form {
+    max-width: -webkit-fill-available;
   }
-  .container {
-    width: 80%;
+  .new-tweet textarea {
+    max-width: -webkit-fill-available;
+  }
+  #tweetsContainer footer{
+    max-width: -webkit-fill-available;
+  }
+  #tweetsContainer article{
+    max-width: -webkit-fill-available;
   }
 }
 
 /* Desktop styles */
+ @media only screen and (min-width: 1025px) {
+  .new-tweet form {
+    max-width: -webkit-fill-available;
+  }
+  .new-tweet textarea {
+    max-width: -webkit-fill-available;
+  }
+  #tweetsContainer footer{
+    max-width: -webkit-fill-available;
+  }
+  #tweetsContainer article{
+    max-width: -webkit-fill-available;
+  }
 
-/* @media only screen and (min-width: 1024px) {
   body {
-    width: 20%;
+    display: flex;
+    background-color: #eeeeee;
   }
-  .container {
-    width: 20%;
+  
+  .container { 
+    margin: 2em;
+    margin-top: 0em;
+    background-color: #eeeeee;
   }
-} */
+  .new-tweet {
+    margin-top: 9em; 
+  }
+  .headerProfile {
+    background-size: 400px;
+    margin-top: 10em;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 40px ;
+  }
 
+  #button {
+    right: 1100px;
+  }
+ }
 
-
-
-
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+ 
+ /* * Additional CSS can be defined below or in other CSS files, as per instructions
+ */ 
