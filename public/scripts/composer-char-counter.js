@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
 
   //This jQuery is for the "Write a new Tweet" Button in the top right of the nav bar which hides or shows the textarea form.
-  $('.tweetText i').on('click', () => {
+  $('.navHeader i').on('click', () => {
     $('.new-tweet form').slideToggle();
     $('.new-tweet textarea').focus();
   });

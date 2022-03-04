@@ -1,3 +1,4 @@
+/* Styles applied to the Profile image of the user and the background image/colour that displays */
 .headerProfile {
   height: 400px;
   width: 100%;
@@ -12,6 +13,7 @@
   margin-top: 120px
 }
 
+/* Styles for the headerName that appears underneath the profile picture */
 .headerName {
   font-size: xx-large;
 }

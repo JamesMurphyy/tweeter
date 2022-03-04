@@ -1,3 +1,4 @@
+/* Styles for the button that appears when the user scrolls to a certain length of the page */
 #button {
   display: inline-block;
   background-color: #4056a1;
@@ -12,11 +13,14 @@
   transition: background-color .3s;
   z-index: 1000;
 }
+
+/* Styles for the button when the user hovers over it */
 #button:hover {
   cursor: pointer;
   background-color:  rgb(177, 157, 157);
 }
 
+/* Styles for the button when the user clicks it */
 #button::after {
   content: "\f077";
   font-family: FontAwesome;

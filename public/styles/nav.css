@@ -1,3 +1,4 @@
+/* Styles for Navigation Bar (Header at top of Page) */
 nav {
   position: fixed;
   top: 0px;
@@ -15,19 +16,8 @@ nav {
   z-index: 9999;
 }
 
-.tweetText {
-  /* color: #ffffff;
-  font-size: 20px;
-  width: 275px;
-  height: 50px;
-  background-color: #5ab6bb;
-  float: right;
-  margin: 0.75em;
-  text-align: center;
-  */
-  /* background: #4e5e7a;
-  border: 2px solid #ffffff;
-  border-radius: 5px; */
+/* Styles specific for the Navigation Bar Header which is the "Write a Tweet" text */
+.navHeader {
   padding: 0.5em;
   font-size: 25px;
   display: inline-flex;
@@ -36,8 +26,8 @@ nav {
   align-items: center;
 }
 
-/* fix */
-.tweetText i {
+/* Styles for the Navigation Bar button -- underneath the aforementioned text */
+.navHeader i {
   padding-left: 10px;
   padding-top: 2px;
   right: 48%;
@@ -46,17 +36,15 @@ nav {
   animation: bounce 2s ease infinite;
 }
 
-.tweetText i:hover {
+/* Styles for the hover feature on the button at the top right of the page */
+.navHeader i:hover {
   color: red;
   cursor: pointer;
-  /* font-size: 1.2em;
-  bottom: -1em;
-  animation: bounce 2s ease infinite; */
   transition: .5s;
 }
 
-
-.tweetText i::after {
+/* Styles for the header button after it has been clicked */
+.navHeader i::after {
   content: '';
   position: absolute;
   top: -50%;
@@ -66,7 +54,7 @@ nav {
 }
 
 
-
+/* This code was used to make the Navigation button bounce in place (animate) */
 @keyframes bounce {
   0%, 25%, 55%, 75%, 100% {
     transform: translateY(0);
@@ -81,6 +69,3 @@ nav {
     transform: translateY(0px);
   }
 }
-
-
-

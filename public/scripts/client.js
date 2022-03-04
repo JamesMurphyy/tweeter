@@ -22,7 +22,7 @@ const createTweetElement = function(tweet) {
             <h3 class = "c2">${escape(tweet.user.handle)}</h3>
           </div>
     </header>
-      <div class = "test">
+      <div class = "tweetContent">
         <div class = "text">
           ${escape(tweet.content.text)}
         </div>

@@ -26,12 +26,10 @@ body {
   align-items: center;
   background-color: #f4f1ec;
   top: 120px
-
 }
 
 
-/* Tablet Styles */
-
+/* Tablet Styles when page is compressed (maximum width of 1024px) */
 @media only screen and (max-width: 1024px) {
   .new-tweet form {
     max-width: -webkit-fill-available;
@@ -47,7 +45,7 @@ body {
   }
 }
 
-/* Desktop styles */
+/* Desktop styles when page is not compressed (minimum width of 1025px)*/
  @media only screen and (min-width: 1025px) {
   .new-tweet form {
     max-width: -webkit-fill-available;
@@ -61,12 +59,10 @@ body {
   #tweetsContainer article{
     max-width: -webkit-fill-available;
   }
-
   body {
     display: flex;
     background-color: #eeeeee;
   }
-  
   .container { 
     margin: 2em;
     margin-top: 0em;
@@ -82,12 +78,4 @@ body {
     margin-right: 3em;
     padding-top: 40px ;
   }
-
-  #button {
-    right: 1100px;
-  }
  }
-
- 
- /* * Additional CSS can be defined below or in other CSS files, as per instructions
- */ 

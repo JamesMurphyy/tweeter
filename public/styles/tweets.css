@@ -1,3 +1,5 @@
+
+/* Styles for the tweet container that the tweets are placed in when new tweets are made */
 #tweetsContainer {
   display: flex;
   align-items: center;
@@ -7,6 +9,9 @@
   padding: 10px;
   
 }
+
+
+/* Individulal styling for each tweet posted (individual "article" containers) */
 #tweetsContainer article {
   margin-bottom: 10px;
   font-weight: bold;
@@ -23,13 +28,12 @@
   border-radius: 5px;
 }
 
+/* Styling for when the user hovers over the article/tweet within the container under the text area */
 article:hover {
   box-shadow: 5px 5px lightblue;
 }
 
-
-
-
+/* Stlying for the header of the tweet */
 .messageHeader {
   height: 400px;
   width: 100%;
@@ -38,6 +42,7 @@ article:hover {
   display:inline;
 }
 
+/* Styling for the content within the header of the tweet */
 .messageHeaderContent {
   display: flex;
   justify-content: space-between;
@@ -47,24 +52,23 @@ article:hover {
   font-size: larger;
 }
 
+/* Styling for the users name within the message header */
 .c1 {
   font-weight: 100;
 }
 
+/* Styling for the users handle within the message header */
 .c2 {
   color: rgb(177, 157, 157);
 }
 
-
-
-
-
-
+/* Styling for the footer of the tweet */
 footer {
   display: inline-block;
   width: inherit;
 }
 
+/* Styling for the reactions that can be done for each tweet (flag, retweet, and like) */
 .reactionImages {
   display: flex;
   justify-content: space-between;
@@ -73,7 +77,7 @@ footer {
   padding-left: 20px;
 }
 
-
+/* Styling for the hover effects if one of these reactions are hovered upon */
 .fa-flag:hover {
   color: rgb(0, 165, 110);
   cursor: pointer;
@@ -88,7 +92,7 @@ footer {
 }
 
 
-
+/* Styling for the users avatar so it doesnt appear too abnormally large */
 .resize {
   width: auto;
   height: 80px;
@@ -99,11 +103,11 @@ footer {
   padding-right: 10px;
 }
 
-.test {
+/* Styling for the content of the tweet that gets displayed */
+.tweetContent {
   border-bottom: black;
   border-style: none;
   border-bottom-style: groove;
-  /* width: auto; */
   display: block;
   border-left-width: 20px;
   margin-right: 20px;
@@ -115,8 +119,8 @@ footer {
   word-break: break-word;
   padding-right: 25px;
 }
+/* Styling for the tweet content that was made, just included another code for the padding on the right
+since this would not affect the bottom border that was used in the ".tweetContent" styling */
 text {
-  padding-right: 20px;
+  padding-right: 25px;
 }
-    
-

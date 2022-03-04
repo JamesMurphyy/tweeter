@@ -3,7 +3,6 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,38 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- App CSS -->
-    
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     <link rel="stylesheet" href="/styles/scrollup-button.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
+
   <body>
-    <!-- Top nav bar (fixed) -->
+    <!-- Title-specific (nav) content here -->
     <nav>
       <span>tweeter</span>
       <span>
-        <div class="tweetText">
+        <div class="navHeader">
           <div> <b>Write</b> a new Tweet</div>
           <i class="fas fa-angle-double-down"> </i>
         </div>
       </span>
     </nav>
-    
+    <!-- Profile-specific (header) content here -->
     <header class = "headerProfile">
       <div>
           <img src="/images/profile-hex.png"> 
@@ -53,42 +48,23 @@
           <div> <b>James</b> Murphy</div>
       </div>
     </header>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-
-
       <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
         <form method="POST" action="/tweets/">
-
-
           <h4 class = "error">
             <i class="fa-solid fa-triangle-exclamation"></i>
             <span class='tweet-error'>Error message</span>
             <i class="fa-solid fa-triangle-exclamation"></i>
           </h4>
-
-
           <label class = "label" for="tweet-text">What are you humming about?</label>
           <textarea name="text" placeholder="What are you humming about?"></textarea>
-          
-          
-
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
-          
         </form>
-
-
-
       </section>
       <section id= "tweetsContainer"></section>
-
-
       <a id="button"></a>
-      
-
       </script>
     </main>
   </body>
